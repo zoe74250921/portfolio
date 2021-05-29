@@ -354,7 +354,7 @@ input, select, textarea {
 		}
 
 		.row > .col-2 {
-			width: 16.66667%;
+			width: 11.86667%;
 		}
 
 		.row > .off-2 {
@@ -477,11 +477,12 @@ input, select, textarea {
 
 		.row.gtr-50 {
 			margin-top: 0;
-			margin-left: -1em;
+			margin-right: -4em;
+			margin-left: -2em;
 		}
 
 			.row.gtr-50 > * {
-				padding: 0 0 0 1em;
+				padding: 0 4em 0 2em;
 			}
 
 			.row.gtr-50.gtr-uniform {
@@ -3549,6 +3550,10 @@ h2, h3{
 	margin-bottom: 3em;
 }
 
+.bottom2 {
+	margin-bottom: 5em;
+}
+
 .top {
 	margin-top: 2em;
 }
@@ -3589,3 +3594,169 @@ h2, h3{
 	color: #ffffff;
 	text-decoration: underline;
   }
+
+.me {
+	background-position: center;
+	background-size: cover;
+
+	border-radius: 8px;
+}
+
+.spring {
+	width: 5em;
+}
+
+.skill {
+	border: 1px solid white;
+	border-radius: 12px;
+}
+
+.project {
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.project>a:hover img {
+	transform: scale(1.2);
+	transition: transform 1s;
+	filter: brightness(70%) ;
+  }
+
+.logo {
+	filter: drop-shadow(5px 5px 5px rgb(59, 59, 59))
+}
+
+
+
+
+
+/* Zero */
+
+#zero {
+	text-align: center;
+}
+
+
+
+
+
+/* 카드효과 - ME */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
+.snip1585 {
+  background-color: #57aed3d0;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin: 10px;
+  max-width: 315px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.snip1585 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1585:before,
+.snip1585:after {
+  background-color: rgba(46, 52, 64,  0.5);
+  border-top: 50px solid rgba(46, 52, 64, 0.5);
+  border-bottom: 50px solid rgba(46, 52, 64, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.snip1585:before {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.snip1585:after {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.snip1585 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.snip1585 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.snip1585 h3 {
+  font-size: 0.65em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0.32em;
+  text-transform: uppercase;
+}
+
+.snip1585 h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.snip1585 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.snip1585:hover > img,
+.snip1585.hover > img {
+  opacity: 0.7;
+}
+
+.snip1585:hover:before,
+.snip1585.hover:before,
+.snip1585:hover:after,
+.snip1585.hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.snip1585:hover figcaption,
+.snip1585.hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+
